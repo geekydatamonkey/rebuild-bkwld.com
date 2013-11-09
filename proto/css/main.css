@@ -764,10 +764,10 @@ textarea {
   h3 {
     page-break-after: avoid; } }
 /**
-* Project Wide Variables 
+* Project wide variables 
 **/
 /**
-* Site wide default styles 
+* Sitewide Default styles
 **/
 /* line 6, ../sass/partials/globals.scss */
 *, *:before, *:after {
@@ -776,27 +776,47 @@ textarea {
   box-sizing: border-box; }
 
 /* line 12, ../sass/partials/globals.scss */
+img {
+  max-width: 100%; }
+
+/* line 16, ../sass/partials/globals.scss */
 body {
-  font-family: "proxima-nova", "Helvetica Neue", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444444; }
+
+/* line 23, ../sass/partials/globals.scss */
+a {
+  color: #0099cc; }
+  /* line 25, ../sass/partials/globals.scss */
+  a:hover {
+    color: deepskyblue; }
+  /* line 28, ../sass/partials/globals.scss */
+  a:visited {
+    color: #77c4bc; }
+  /* line 31, ../sass/partials/globals.scss */
+  a:visited:hover {
+    color: #53b5aa; }
+
+/* line 36, ../sass/partials/globals.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
 
 /* line 1, ../sass/partials/modules.scss */
 body {
   padding: 2em; }
 
-/* line 4, ../sass/partials/modules.scss */
-img {
-  max-width: 100%; }
-
-/* line 8, ../sass/partials/modules.scss */
+/* line 5, ../sass/partials/modules.scss */
 .module {
   margin: 2em 0; }
-  /* line 10, ../sass/partials/modules.scss */
+  /* line 7, ../sass/partials/modules.scss */
   .module > h1 {
     font-size: 1.25rem;
     padding: 0.25em 0;
     text-transform: uppercase;
     background-color: #ffff99; }
-    /* line 16, ../sass/partials/modules.scss */
+    /* line 13, ../sass/partials/modules.scss */
     .module > h1 code {
       color: #999;
       font-size: 1rem;

@@ -1,6 +1,6 @@
 /**
-* Site wide default styles 
-**/
+* Sitewide Default styles
+**/ 
 
 // src: http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 *, *:before, *:after {
@@ -9,6 +9,30 @@
   box-sizing: border-box;
  }
 
+img {
+  max-width: 100%;
+}
+
 body {
- font-family: $base-font-family;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  color: $color-black;
+}
+
+a {
+  color: $color-blue;
+  &:hover {
+    color: $color-blue-light;
+  }
+  &:visited {
+    color: $color-teal;
+  }
+  &:visited:hover {
+    color: $color-teal-dark;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
 }
