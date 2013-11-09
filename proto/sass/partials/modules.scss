@@ -1,0 +1,23 @@
+body {
+  padding: 2em;
+}
+img {
+  max-width: 100%;
+}
+
+.module {
+  margin: 2em 0;
+  &> h1 {
+    font-size: 1.25rem;
+    padding: 0.25em 0;
+    text-transform: uppercase;
+
+    background-color: hsl(60, 100%, 80%);
+    code {
+      color: #999;
+      font-size: 1rem;
+      text-transform: none;
+      //font-family: monoespace;
+    }
+  }
+}
