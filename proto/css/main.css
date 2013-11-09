@@ -666,15 +666,16 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 /* line 199, ../sass/partials/html5bp.scss */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .page-header:before,
+.clearfix:after,
+.page-header:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
 /* line 204, ../sass/partials/html5bp.scss */
-.clearfix:after {
+.clearfix:after, .page-header:after {
   clear: both; }
 
 /*
@@ -682,7 +683,7 @@ textarea {
  * Include this rule to trigger hasLayout and contain floats.
  */
 /* line 213, ../sass/partials/html5bp.scss */
-.clearfix {
+.clearfix, .page-header {
   *zoom: 1; }
 
 /* ==========================================================================
@@ -831,6 +832,32 @@ h1, h2, h3, h4, h5, h6 {
   /* line 25, ../sass/partials/main-nav.scss */
   .main-nav li:first-child:before {
     content: none; }
+
+/* line 1, ../sass/partials/page-header.scss */
+.page-header {
+  background-color: #222222;
+  color: #fff;
+  font-family: "Open Sans Condensed", sans-serif;
+  display: table;
+  width: 100%;
+  padding: 0 1em 0 2em; }
+  /* line 9, ../sass/partials/page-header.scss */
+  .page-header h1 {
+    font-weight: bold;
+    font-size: 2.75em;
+    line-height: 1;
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle; }
+    /* line 16, ../sass/partials/page-header.scss */
+    .page-header h1 a {
+      color: #fff;
+      text-decoration: none; }
+  /* line 21, ../sass/partials/page-header.scss */
+  .page-header .main-nav {
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle; }
 
 /* line 1, ../sass/partials/modules.scss */
 body {

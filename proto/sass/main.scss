@@ -10,10 +10,12 @@
 
 // Globals
 @import "partials/variables";
+@import "partials/mixins";
 @import "partials/globals";
 
 // Modules
 @import "partials/main-nav";
+@import "partials/page-header";
 
 // Pages
 @import "partials/modules";

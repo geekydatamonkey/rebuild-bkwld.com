@@ -1,0 +1,26 @@
+.page-header {
+  @extend .clearfix;
+  background-color: $color-blacker;
+  color: #fff;
+  font-family: $condensed-font-family;
+  display: table;
+  width: 100%;
+  padding: 0 1em 0 2em;
+  h1 {
+    font-weight: bold;
+    font-size: 2.75em;
+    line-height: 1;
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .main-nav {
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
