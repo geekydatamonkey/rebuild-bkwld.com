@@ -3,6 +3,9 @@ body {
 }
 
 .module {
+  .mockup img {
+    max-width: none;
+  }
   margin: 2em 0;
   &> h1 {
     font-size: 1.25rem;

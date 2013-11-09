@@ -803,6 +803,35 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
 
+/* line 1, ../sass/partials/main-nav.scss */
+.main-nav {
+  background-color: #222222;
+  color: #fff;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 0.5em;
+  font-size: 1.1em;
+  text-transform: uppercase; }
+  /* line 8, ../sass/partials/main-nav.scss */
+  .main-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em;
+    display: inline-block; }
+  /* line 14, ../sass/partials/main-nav.scss */
+  .main-nav ul {
+    margin: 0;
+    padding: 0; }
+  /* line 18, ../sass/partials/main-nav.scss */
+  .main-nav li {
+    display: inline-block; }
+  /* line 21, ../sass/partials/main-nav.scss */
+  .main-nav li:before {
+    content: '/';
+    color: #555555; }
+  /* line 25, ../sass/partials/main-nav.scss */
+  .main-nav li:first-child:before {
+    content: none; }
+
 /* line 1, ../sass/partials/modules.scss */
 body {
   padding: 2em; }
@@ -810,13 +839,16 @@ body {
 /* line 5, ../sass/partials/modules.scss */
 .module {
   margin: 2em 0; }
-  /* line 7, ../sass/partials/modules.scss */
+  /* line 6, ../sass/partials/modules.scss */
+  .module .mockup img {
+    max-width: none; }
+  /* line 10, ../sass/partials/modules.scss */
   .module > h1 {
     font-size: 1.25rem;
     padding: 0.25em 0;
     text-transform: uppercase;
     background-color: #ffff99; }
-    /* line 13, ../sass/partials/modules.scss */
+    /* line 16, ../sass/partials/modules.scss */
     .module > h1 code {
       color: #999;
       font-size: 1rem;
