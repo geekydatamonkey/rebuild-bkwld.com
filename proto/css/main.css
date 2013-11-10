@@ -781,7 +781,7 @@ img {
 
 /* line 16, ../sass/partials/globals.scss */
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #444444; }
@@ -807,9 +807,9 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav {
   background-color: #222222;
   color: #fff;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "proxima-nova-extra-condensed", "proxima-nova", sans-serif;
   text-transform: uppercase;
-  font-size: 1.1em;
+  font-size: 1.25em;
   padding: 0.5em; }
   /* line 8, ../sass/partials/main-nav.scss */
   .main-nav a {
@@ -836,16 +836,16 @@ h1, h2, h3, h4, h5, h6 {
 .page-header {
   background-color: #222222;
   color: #fff;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-family: "proxima-nova-extra-condensed", "proxima-nova", sans-serif;
   display: table;
   width: 100%;
-  padding: 0 1em 0 2.5em; }
+  padding: 0 0.5em 0 2.5em; }
   /* line 8, ../sass/partials/page-header.scss */
   .page-header h1 {
     display: table-cell;
     vertical-align: middle;
-    font-weight: bold;
-    font-size: 2.66em;
+    font-weight: 600;
+    font-size: 2.75em;
     line-height: 1;
     margin: 0; }
     /* line 16, ../sass/partials/page-header.scss */
