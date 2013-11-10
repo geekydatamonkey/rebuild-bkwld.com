@@ -894,6 +894,18 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     top: 0.4375em; }
 
+/* line 1, ../sass/partials/card.scss */
+.card {
+  width: 33%;
+  padding: 1.5em 0;
+  border: 1px solid #ccc; }
+  /* line 4, ../sass/partials/card.scss */
+  .card img {
+    border-radius: 50%;
+    padding: 1.5em;
+    display: block;
+    margin: 0 auto; }
+
 /* line 1, ../sass/partials/modules.scss */
 body {
   padding: 2em; }
