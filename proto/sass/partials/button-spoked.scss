@@ -1,0 +1,43 @@
+.button-spoked {
+  $color-button-spoked: $color-blacker;
+
+  display: inline-block;
+  width: 6em;
+  height: 6em;
+  border-radius: 50%;
+  background-color: $color-button-spoked;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 2.25em;
+  font-family: $condensed-font-family;
+  font-size: 1.4em;
+  position: relative;
+  
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 1px;
+    height: 3em;
+    background-color: $color-button-spoked;
+    //border: 1px solid red;
+    @include rotate(45deg);
+    @include transform-origin(0,0);
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -10%;
+    left: -10%;
+    width: 1px;
+    height: 3em;
+    background-color: $color-button-spoked;
+    @include rotate(45deg);
+    @include transform-origin(100%,100%);
+  }
+}
