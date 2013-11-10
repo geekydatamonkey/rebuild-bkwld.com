@@ -858,6 +858,42 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
     text-align: right; }
 
+/* line 1, ../sass/partials/card-nameplate.scss */
+.card-nameplate {
+  line-height: 1.25;
+  padding-left: 2.5em;
+  position: relative; }
+  /* line 9, ../sass/partials/card-nameplate.scss */
+  .card-nameplate h1 {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0; }
+  /* line 14, ../sass/partials/card-nameplate.scss */
+  .card-nameplate p {
+    font-size: 0.9em;
+    margin: 0;
+    color: #555555; }
+  /* line 19, ../sass/partials/card-nameplate.scss */
+  .card-nameplate h1:before {
+    content: '';
+    display: inline-block;
+    border-bottom: 1px solid #77c4bc;
+    width: 1.5em;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 0; }
+  /* line 29, ../sass/partials/card-nameplate.scss */
+  .card-nameplate h1:after {
+    content: '';
+    display: inline-block;
+    border-right: 1px solid #77c4bc;
+    width: 0.75em;
+    height: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 0.4375em; }
+
 /* line 1, ../sass/partials/modules.scss */
 body {
   padding: 2em; }

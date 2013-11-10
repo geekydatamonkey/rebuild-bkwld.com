@@ -1,0 +1,39 @@
+.card-nameplate {
+
+  $plus-width: 1.5em;
+
+  //border: 1px solid blue;
+  line-height: 1.25;
+  padding-left: 2.5em;
+  position: relative;
+  h1{ 
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+  }
+  p {
+    font-size: 0.9em;
+    margin: 0;
+    color: $color-gray-darker;
+  }
+  h1:before {
+    content: '';
+    display: inline-block;
+    border-bottom: 1px solid $color-teal;
+    width: $plus-width;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  h1:after {
+    content: '';
+    display: inline-block;
+    border-right: 1px solid $color-teal;
+    width: $plus-width/2;
+    height: $plus-width;
+    position: absolute;
+    left: 0;
+    top: (38/16 * 1em - $plus-width)/2;
+  }
+}
