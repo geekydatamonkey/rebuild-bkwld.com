@@ -10,6 +10,7 @@
 
 // Helpers
 @import "compass/css3";
+@import "vendor/font-awesome/font-awesome";
 
 // Globals
 @import "partials/variables";
@@ -23,6 +24,7 @@
 @import "partials/card";
 @import "partials/button-spoked";
 @import "partials/footer-section";
+@import "partials/button-more";
 
 // Pages
 @import "partials/modules";
