@@ -809,26 +809,42 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   font-family: "proxima-nova-extra-condensed", "proxima-nova", sans-serif;
   text-transform: uppercase;
-  font-size: 1.25em;
-  padding: 0.5em; }
-  /* line 8, ../sass/partials/main-nav.scss */
+  font-size: 1.25em; }
+  /* line 7, ../sass/partials/main-nav.scss */
   .main-nav a {
     color: #fff;
     text-decoration: none;
     display: inline-block;
-    padding: 0.5em 1em; }
-  /* line 14, ../sass/partials/main-nav.scss */
+    padding: 1em 1em;
+    position: relative; }
+    /* line 14, ../sass/partials/main-nav.scss */
+    .main-nav a:hover {
+      color: #77c4bc; }
+    /* line 18, ../sass/partials/main-nav.scss */
+    .main-nav a:hover:after {
+      display: block;
+      content: '';
+      border-bottom: 0.2em solid white;
+      border-left: 0.2em solid transparent;
+      border-right: 0.2em solid transparent;
+      border-top: 0.2em solid transparent;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -0.2em; }
+  /* line 22, ../sass/partials/main-nav.scss */
   .main-nav ul {
     padding: 0;
     margin: 0; }
-  /* line 18, ../sass/partials/main-nav.scss */
+  /* line 26, ../sass/partials/main-nav.scss */
   .main-nav li {
+    position: relative;
     display: inline-block; }
-  /* line 21, ../sass/partials/main-nav.scss */
+  /* line 30, ../sass/partials/main-nav.scss */
   .main-nav li:before {
     content: '/';
     color: #555555; }
-  /* line 25, ../sass/partials/main-nav.scss */
+  /* line 34, ../sass/partials/main-nav.scss */
   .main-nav li:first-child:before {
     content: none; }
 

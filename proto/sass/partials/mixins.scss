@@ -1,0 +1,16 @@
+@mixin bottomTriangle($tri-width: 1em) {
+    // for 45-45-90 triangle
+    $tri-height: $tri-width/2;
+    // for equilateral tri
+    // $tri-height: $tri-width/2 * sqrt(3);
+    display: block;
+    content: '';
+    border-bottom: $tri-height solid #fff;
+    border-left: $tri-width/2 solid transparent;
+    border-right: $tri-width/2 solid transparent;
+    border-top: $tri-height solid transparent;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1 * $tri-width / 2; // nudge back
+}
