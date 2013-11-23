@@ -2624,26 +2624,24 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9em;
     margin: 0;
     color: #555555; }
-  /* line 19, ../sass/partials/card-nameplate.scss */
-  .card-nameplate h1:before {
-    content: '';
-    display: inline-block;
-    border-bottom: 1px solid #77c4bc;
-    width: 1.5em;
-    height: 0;
-    position: absolute;
-    top: 50%;
-    left: 0; }
-  /* line 29, ../sass/partials/card-nameplate.scss */
+  /* line 20, ../sass/partials/card-nameplate.scss */
+  .card-nameplate h1:before,
   .card-nameplate h1:after {
     content: '';
     display: inline-block;
-    border-right: 1px solid #77c4bc;
-    width: 0.75em;
-    height: 1.5em;
+    background-color: #77c4bc;
+    width: 1.5em;
+    height: 1px;
     position: absolute;
-    left: 0;
-    top: 0.4375em; }
+    top: 50%;
+    left: 0; }
+  /* line 30, ../sass/partials/card-nameplate.scss */
+  .card-nameplate h1:after {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg); }
 
 /* line 1, ../sass/partials/card.scss */
 .card {
@@ -2882,6 +2880,85 @@ h1, h2, h3, h4, h5, h6 {
       -ms-transform: rotate(-45deg);
       -o-transform: rotate(-45deg);
       transform: rotate(-45deg); }
+  /* line 58, ../sass/partials/subnav.scss */
+  .subnav.is-closed .subnav-button {
+    background-color: #77c4bc; }
+    /* line 60, ../sass/partials/subnav.scss */
+    .subnav.is-closed .subnav-button:after {
+      border-color: #dddddd;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: .9em; }
+  /* line 69, ../sass/partials/subnav.scss */
+  .subnav.is-closed ul {
+    display: none; }
+
+/* line 1, ../sass/partials/content-section.scss */
+.content-section {
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center; }
+  /* line 6, ../sass/partials/content-section.scss */
+  .content-section h1 {
+    font-size: 1.5em;
+    color: #000;
+    font-weight: 200;
+    padding: 0 2em;
+    line-height: 1.2;
+    text-align: center; }
+  /* line 14, ../sass/partials/content-section.scss */
+  .content-section h1:after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    background-color: #cccccc;
+    margin: 0.75em auto; }
+
+/* line 1, ../sass/partials/news-card.scss */
+.news-card {
+  padding: 1em; }
+  /* line 3, ../sass/partials/news-card.scss */
+  .news-card img {
+    max-width: 90%;
+    border-radius: 0;
+    margin: 1em auto;
+    padding: 0; }
+  /* line 9, ../sass/partials/news-card.scss */
+  .news-card .card-nameplate {
+    padding-left: 2em; }
+    /* line 11, ../sass/partials/news-card.scss */
+    .news-card .card-nameplate h1 {
+      font-size: 0.75em; }
+    /* line 16, ../sass/partials/news-card.scss */
+    .news-card .card-nameplate h1:before,
+    .news-card .card-nameplate h1:after {
+      width: 1em; }
+
+/* line 1, ../sass/partials/button.scss */
+.button {
+  font-family: "proxima-nova-extra-condensed", "proxima-nova", sans-serif;
+  font-weight: 600;
+  font-size: .85em;
+  display: inline-block;
+  padding: 0.25em 1em;
+  background-color: #77c4bc;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+/* line 13, ../sass/partials/button.scss */
+.button:visited,
+.button:visited:hover,
+.button:hover {
+  color: #fff; }
+
+/* line 16, ../sass/partials/button.scss */
+.button:hover {
+  background-color: #40958c; }
 
 /* line 1, ../sass/partials/modules.scss */
 body {

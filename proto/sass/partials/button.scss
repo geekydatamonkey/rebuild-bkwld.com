@@ -1,0 +1,18 @@
+.button {
+  font-family: $condensed-font-family;
+  font-weight: 600;
+  font-size: .85em;
+  display: inline-block;
+  padding: 0.25em 1em;
+  background-color: $color-teal;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button:visited,
+.button:visited:hover,
+.button:hover {
+    color: #fff;
+}
+.button:hover {
+  background-color: darken($color-teal, 20%);
+}

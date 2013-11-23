@@ -16,24 +16,18 @@
     margin: 0;
     color: $color-gray-darker;
   }
-  h1:before {
+  h1:before,
+  h1:after {
     content: '';
     display: inline-block;
-    border-bottom: 1px solid $color-teal;
+    background-color: $color-teal;
     width: $plus-width;
-    height: 0;
+    height: 1px;
     position: absolute;
     top: 50%;
     left: 0;
   }
   h1:after {
-    content: '';
-    display: inline-block;
-    border-right: 1px solid $color-teal;
-    width: $plus-width/2;
-    height: $plus-width;
-    position: absolute;
-    left: 0;
-    top: (38/16 * 1em - $plus-width)/2;
+    @include rotate(90deg);
   }
 }

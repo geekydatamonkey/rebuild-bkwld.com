@@ -54,4 +54,20 @@
       @include bkwldArrow($arrow-padding: 1.5em);
     }
   }
+  &.is-closed {
+    .subnav-button {
+      background-color: $color-teal;
+      &:after{ 
+        border-color: $font-color;
+        @include rotate(-45deg);
+        top: .9em; 
+        // Too many magic numbers --- need to fix later
+        // or just use images
+
+      }
+    }
+    ul {
+      display: none;
+    }
+  }
 }

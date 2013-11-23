@@ -1,0 +1,22 @@
+.content-section {
+  padding: 1em;
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  h1 {
+    font-size: 1.5em;
+    color: #000;
+    font-weight: 200;
+    padding: 0 2em;
+    line-height: 1.2;
+    text-align:center;
+  }
+  h1:after {
+    content: '';
+    display: block;
+    width: 2em;
+    height: 1px;
+    background-color: $color-gray;
+    margin: 0.75em auto;
+  }
+}
