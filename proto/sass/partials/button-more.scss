@@ -12,6 +12,6 @@
     background-color: $color-teal-dark;
   }
   &:before {
-    
+    @extend .fa.fa-angle-down;
   }
 }
