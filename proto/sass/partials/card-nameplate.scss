@@ -16,18 +16,7 @@
     margin: 0;
     color: $color-gray-darker;
   }
-  h1:before,
-  h1:after {
-    content: '';
-    display: inline-block;
-    background-color: $color-teal;
-    width: $plus-width;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    left: 0;
-  }
-  h1:after {
-    @include rotate(90deg);
+  h1 {
+    @include bkwldPlus();
   }
 }

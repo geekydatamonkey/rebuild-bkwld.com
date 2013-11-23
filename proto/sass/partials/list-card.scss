@@ -1,0 +1,37 @@
+.list-card {
+  border: 0.125em solid $color-teal;
+  max-width: 13em;
+  header {
+    background-color: $color-blacker;
+    color: #eee;
+    position: relative;
+    h1 { 
+      margin: 0;
+      font-size: 1.25em;
+      font-weight: 200;
+      padding: 1em 1em 1em 3.5em; 
+      line-height: 1.2;
+      @include bkwldPlus(2em,$color-teal-dark);
+      // slide plus over
+      &:before, &:after {
+        left: 0.75em;
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    font-size: 0.8em;
+    padding-left: 0;
+  }
+  li {
+    position: relative;
+    margin: 0.5em 1em;
+    padding-left: 1.5em;
+    line-height: 1.2;
+    @include bkwldPlus(1em, $color-gray-light);
+    &:before, &:after {
+      top: 0.4em;
+      //margin-top: -0.25em;
+    }
+  }
+}

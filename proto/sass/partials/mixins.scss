@@ -15,10 +15,10 @@
     margin-left: -1 * $tri-width / 2; // nudge back
 }
 
-@mixin bkwldArrow($arrow-size: 0.4em, $direction: 'right', $arrow-padding: 0) {
+@mixin bkwldArrow($arrow-size: 0.4em, $direction: 'right', $arrow-padding: 0, $arrow-color: darken($color-teal, 30%)) {
       //$arrow-size: .4em;
       //$arrow-padding: 1.5em;
-      $arrow-color: darken($color-teal, 30%);
+      //$arrow-color: darken($color-teal, 30%);
       font-size: $arrow-size;
       display: inline-block;
       content: '';
@@ -33,7 +33,27 @@
       @if ($direction == 'right') {
           @include rotate(-45deg);
       }
+      @if ($direction == 'left') {
+          @include rotate(135deg);
+      }
       @if ($direction == 'down') {
           @include rotate(45deg);
       }
+}
+
+@mixin bkwldPlus($plus-width: 1.5em, $plus-color: $color-teal) {
+  &:before,
+  &:after {
+    content: '';
+    display: inline-block;
+    background-color: $plus-color;
+    width: $plus-width;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+  }
+  &:after {
+    @include rotate(90deg);
+  }
 }

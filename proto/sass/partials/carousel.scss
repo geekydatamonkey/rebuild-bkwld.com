@@ -1,0 +1,64 @@
+.carousel {
+  min-height: 5em;
+  font-size: 2em;
+  font-weight: 200;
+  background-color: $color-gray-lighter;
+  padding: 1em 2em;
+  position: relative;
+  line-height: 1.1;
+  .carousel-items {
+    padding: 0;
+    margin: 0;
+    width: 75%;
+    li {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  }
+  .carousel-controls .previous,
+  .carousel-controls .next {
+    display: block;
+    //border: 1px solid red;
+    position: absolute;
+    top: 40%;
+    color: transparent;
+  }
+  .carousel-controls .previous {
+    left: 0;
+    &:before {
+      @include bkwldArrow(0.75em,'left', 0, #aaa);
+      margin: 0 0.75em;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  .carousel-controls .next {
+    right: 0;
+    &:before {
+      @include bkwldArrow(0.75em,'right', 0, #aaa);
+      margin: 0 0.75em;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+}
+
+.button-spoked-wrap {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+
+  .button-spoked {
+    font-family: $base-font-family;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #fff;
+    span {
+      font-size: 0.7em;
+    }
+  }
+}

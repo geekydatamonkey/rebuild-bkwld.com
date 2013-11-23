@@ -2516,7 +2516,7 @@ img {
 
 /* line 16, ../sass/partials/globals.scss */
 body {
-  font-family: "proxima-nova", sans-serif;
+  font-family: "proxima-nova", "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #444444; }
@@ -2542,7 +2542,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav {
   background-color: #222222;
   color: #fff;
-  font-family: "proxima-nova-extra-condensed", "proxima-nova", sans-serif;
+  font-family: "proxima-nova-extra-condensed", "Open Sans Condensed", "proxima-nova", "Open Sans", sans-serif;
   text-transform: uppercase;
   font-size: 1.25em; }
   /* line 7, ../sass/partials/main-nav.scss */
@@ -2587,7 +2587,7 @@ h1, h2, h3, h4, h5, h6 {
 .page-header {
   background-color: #222222;
   color: #fff;
-  font-family: "proxima-nova-extra-condensed", "proxima-nova", sans-serif;
+  font-family: "proxima-nova-extra-condensed", "Open Sans Condensed", "proxima-nova", "Open Sans", sans-serif;
   display: table;
   width: 100%;
   padding: 0 0.5em 0 2.5em; }
@@ -2624,9 +2624,8 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9em;
     margin: 0;
     color: #555555; }
-  /* line 20, ../sass/partials/card-nameplate.scss */
-  .card-nameplate h1:before,
-  .card-nameplate h1:after {
+  /* line 46, ../sass/partials/mixins.scss */
+  .card-nameplate h1:before, .card-nameplate h1:after {
     content: '';
     display: inline-block;
     background-color: #77c4bc;
@@ -2635,7 +2634,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 50%;
     left: 0; }
-  /* line 30, ../sass/partials/card-nameplate.scss */
+  /* line 56, ../sass/partials/mixins.scss */
   .card-nameplate h1:after {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -2667,7 +2666,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-decoration: none;
   padding-top: 2.5em;
-  font-family: "proxima-nova-extra-condensed", "proxima-nova", sans-serif;
+  font-family: "proxima-nova-extra-condensed", "Open Sans Condensed", "proxima-nova", "Open Sans", sans-serif;
   font-size: 1.4em;
   position: relative; }
   /* line 18, ../sass/partials/button-spoked.scss */
@@ -2736,7 +2735,7 @@ h1, h2, h3, h4, h5, h6 {
   /* line 22, ../sass/partials/footer-section.scss */
   .footer-section footer {
     text-align: center;
-    font-family: "proxima-nova-extra-condensed", "proxima-nova", sans-serif;
+    font-family: "proxima-nova-extra-condensed", "Open Sans Condensed", "proxima-nova", "Open Sans", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.11111em; }
@@ -2941,7 +2940,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 1, ../sass/partials/button.scss */
 .button {
-  font-family: "proxima-nova-extra-condensed", "proxima-nova", sans-serif;
+  font-family: "proxima-nova-extra-condensed", "Open Sans Condensed", "proxima-nova", "Open Sans", sans-serif;
   font-weight: 600;
   font-size: .85em;
   display: inline-block;
@@ -2959,6 +2958,165 @@ h1, h2, h3, h4, h5, h6 {
 /* line 16, ../sass/partials/button.scss */
 .button:hover {
   background-color: #40958c; }
+
+/* line 1, ../sass/partials/carousel.scss */
+.carousel {
+  min-height: 5em;
+  font-size: 2em;
+  font-weight: 200;
+  background-color: #eeeeee;
+  padding: 1em 2em;
+  position: relative;
+  line-height: 1.1; }
+  /* line 9, ../sass/partials/carousel.scss */
+  .carousel .carousel-items {
+    padding: 0;
+    margin: 0;
+    width: 75%; }
+    /* line 13, ../sass/partials/carousel.scss */
+    .carousel .carousel-items li {
+      display: none; }
+    /* line 16, ../sass/partials/carousel.scss */
+    .carousel .carousel-items .active {
+      display: block; }
+  /* line 21, ../sass/partials/carousel.scss */
+  .carousel .carousel-controls .previous,
+  .carousel .carousel-controls .next {
+    display: block;
+    position: absolute;
+    top: 40%;
+    color: transparent; }
+  /* line 28, ../sass/partials/carousel.scss */
+  .carousel .carousel-controls .previous {
+    left: 0; }
+    /* line 30, ../sass/partials/carousel.scss */
+    .carousel .carousel-controls .previous:before {
+      font-size: 0.75em;
+      display: inline-block;
+      content: '';
+      width: 1em;
+      height: 1em;
+      border-bottom: #aaaaaa solid 1px;
+      border-right: #aaaaaa solid 1px;
+      margin-left: -1em;
+      margin-right: 0;
+      margin-bottom: 0.75em;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+      margin: 0 0.75em;
+      position: absolute;
+      top: 0;
+      left: 0; }
+  /* line 38, ../sass/partials/carousel.scss */
+  .carousel .carousel-controls .next {
+    right: 0; }
+    /* line 40, ../sass/partials/carousel.scss */
+    .carousel .carousel-controls .next:before {
+      font-size: 0.75em;
+      display: inline-block;
+      content: '';
+      width: 1em;
+      height: 1em;
+      border-bottom: #aaaaaa solid 1px;
+      border-right: #aaaaaa solid 1px;
+      margin-left: -1em;
+      margin-right: 0;
+      margin-bottom: 0.75em;
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      margin: 0 0.75em;
+      position: absolute;
+      top: 0;
+      right: 0; }
+
+/* line 50, ../sass/partials/carousel.scss */
+.button-spoked-wrap {
+  position: absolute;
+  top: 15%;
+  right: 10%; }
+  /* line 55, ../sass/partials/carousel.scss */
+  .button-spoked-wrap .button-spoked {
+    font-family: "proxima-nova", "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #fff; }
+    /* line 60, ../sass/partials/carousel.scss */
+    .button-spoked-wrap .button-spoked span {
+      font-size: 0.7em; }
+
+/* line 1, ../sass/partials/list-card.scss */
+.list-card {
+  border: 0.125em solid #77c4bc;
+  max-width: 13em; }
+  /* line 4, ../sass/partials/list-card.scss */
+  .list-card header {
+    background-color: #222222;
+    color: #eee;
+    position: relative; }
+    /* line 8, ../sass/partials/list-card.scss */
+    .list-card header h1 {
+      margin: 0;
+      font-size: 1.25em;
+      font-weight: 200;
+      padding: 1em 1em 1em 3.5em;
+      line-height: 1.2; }
+      /* line 46, ../sass/partials/mixins.scss */
+      .list-card header h1:before, .list-card header h1:after {
+        content: '';
+        display: inline-block;
+        background-color: #53b5aa;
+        width: 2em;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        left: 0; }
+      /* line 56, ../sass/partials/mixins.scss */
+      .list-card header h1:after {
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg); }
+      /* line 16, ../sass/partials/list-card.scss */
+      .list-card header h1:before, .list-card header h1:after {
+        left: 0.75em; }
+  /* line 21, ../sass/partials/list-card.scss */
+  .list-card ul {
+    list-style-type: none;
+    font-size: 0.8em;
+    padding-left: 0; }
+  /* line 26, ../sass/partials/list-card.scss */
+  .list-card li {
+    position: relative;
+    margin: 0.5em 1em;
+    padding-left: 1.5em;
+    line-height: 1.2; }
+    /* line 46, ../sass/partials/mixins.scss */
+    .list-card li:before, .list-card li:after {
+      content: '';
+      display: inline-block;
+      background-color: #dddddd;
+      width: 1em;
+      height: 1px;
+      position: absolute;
+      top: 50%;
+      left: 0; }
+    /* line 56, ../sass/partials/mixins.scss */
+    .list-card li:after {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg); }
+    /* line 32, ../sass/partials/list-card.scss */
+    .list-card li:before, .list-card li:after {
+      top: 0.4em; }
 
 /* line 1, ../sass/partials/modules.scss */
 body {

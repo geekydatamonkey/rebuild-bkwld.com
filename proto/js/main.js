@@ -23,11 +23,18 @@
 
       });
     }
+  };
 
+  var bkwldSite = {
   };
 
   $(document).ready(function() {
-    modulesPage.init();
+    // development code for modules page
+    if ($('body.modules-page').length ) {
+      modulesPage.init();
+    }
+
+
   });
 
 })(jQuery, window, document);
