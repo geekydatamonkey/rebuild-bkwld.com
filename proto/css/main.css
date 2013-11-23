@@ -2799,42 +2799,73 @@ h1, h2, h3, h4, h5, h6 {
     color: #bee3df;
     padding-right: 0.5em; }
 
+/* line 21, ../sass/partials/button-more.scss */
+.button-more:visited {
+  color: #fff; }
+  /* line 23, ../sass/partials/button-more.scss */
+  .button-more:visited:hover {
+    color: #fff; }
+
 /* line 1, ../sass/partials/subnav.scss */
 .subnav {
   background-color: #111111;
   color: #dddddd;
   font-weight: 100; }
-  /* line 7, ../sass/partials/subnav.scss */
+  /* line 8, ../sass/partials/subnav.scss */
   .subnav header {
     background-color: #77c4bc;
     color: #fff;
     position: relative; }
-    /* line 12, ../sass/partials/subnav.scss */
+    /* line 13, ../sass/partials/subnav.scss */
     .subnav header h1 {
       font-size: 0.8em;
       padding: 1em 2em; }
-    /* line 16, ../sass/partials/subnav.scss */
+    /* line 17, ../sass/partials/subnav.scss */
     .subnav header .subnav-button {
       text-align: center;
       text-decoration: none;
       background-color: #111111;
-      color: #777;
+      color: #777777;
+      text-indent: -999em;
       display: inline-block;
       position: absolute;
       top: 0;
       right: 0;
-      border: 1px solid red;
-      height: 100%;
-      width: 3em; }
-  /* line 31, ../sass/partials/subnav.scss */
+      width: 3.5em;
+      height: 100%; }
+      /* line 31, ../sass/partials/subnav.scss */
+      .subnav header .subnav-button:after {
+        display: block;
+        font-size: 1em;
+        display: inline-block;
+        content: '';
+        width: 1em;
+        height: 1em;
+        border-bottom: #31716a solid 1px;
+        border-right: #31716a solid 1px;
+        margin-left: -1em;
+        margin-right: 0;
+        margin-bottom: 1em;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-color: #777777;
+        position: absolute;
+        top: 0.5em;
+        left: 50%;
+        margin-left: -0.5em; }
+  /* line 45, ../sass/partials/subnav.scss */
   .subnav .subnav-options {
     font-size: 1.5em;
     font-weight: 100;
-    padding: 1em 1em 1em 2.75em; }
-    /* line 35, ../sass/partials/subnav.scss */
+    padding: 1em 1em 1em 2.75em;
+    margin: 0; }
+    /* line 50, ../sass/partials/subnav.scss */
     .subnav .subnav-options li:hover {
       color: #77c4bc; }
-    /* line 38, ../sass/partials/subnav.scss */
+    /* line 53, ../sass/partials/subnav.scss */
     .subnav .subnav-options .active:before {
       font-size: 0.4em;
       display: inline-block;

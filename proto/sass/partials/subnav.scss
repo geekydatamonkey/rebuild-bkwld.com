@@ -1,6 +1,7 @@
 .subnav {
   $subnav-background: #111;
   $font-color: #ddd;
+  $menu-arrow-color: #777;
   background-color: $subnav-background;
   color: $font-color;
   font-weight: 100;
@@ -17,26 +18,40 @@
       text-align: center;
       text-decoration: none;
       background-color: $subnav-background;
-      color: #777;
+      color: $menu-arrow-color;
       //font-size: 3em;
+      text-indent: -999em;
       display: inline-block;
       position: absolute;
       top: 0;
       right: 0;
-      border: 1px solid red;
+      //border: 1px solid red;
+      width: 3.5em;
       height: 100%;
-      width: 3em;
+      &:after {
+        display: block;
+        @include bkwldArrow(1em, down);
+        // Some overrides
+        border-color: $menu-arrow-color;
+        position: absolute;
+        // hackish centering
+        top: 0.5em;
+        left: 50%;
+        margin-left: -0.5em;
+      }
+
     }
   }
   .subnav-options {
     font-size: 1.5em;
     font-weight: 100;
     padding: 1em 1em 1em 2.75em;
+    margin: 0;
     li:hover {
       color: $color-teal;
     }
     .active:before {
-      @include leftArrow();
+      @include bkwldArrow($arrow-padding: 1.5em);
     }
   }
 }

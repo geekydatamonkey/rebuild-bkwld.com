@@ -15,9 +15,9 @@
     margin-left: -1 * $tri-width / 2; // nudge back
 }
 
-@mixin leftArrow($arrow-size: 0.4em) {
+@mixin bkwldArrow($arrow-size: 0.4em, $direction: 'right', $arrow-padding: 0) {
       //$arrow-size: .4em;
-      $arrow-padding: 1.5em;
+      //$arrow-padding: 1.5em;
       $arrow-color: darken($color-teal, 30%);
       font-size: $arrow-size;
       display: inline-block;
@@ -29,5 +29,11 @@
       margin-left: -1em - $arrow-padding;
       margin-right: $arrow-padding;
       margin-bottom: $arrow-size; // nudge up
-      @include rotate(-45deg);
+
+      @if ($direction == 'right') {
+          @include rotate(-45deg);
+      }
+      @if ($direction == 'down') {
+          @include rotate(45deg);
+      }
 }
