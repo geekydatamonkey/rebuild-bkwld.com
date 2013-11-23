@@ -1,0 +1,42 @@
+.subnav {
+  $subnav-background: #111;
+  $font-color: #ddd;
+  background-color: $subnav-background;
+  color: $font-color;
+  font-weight: 100;
+  header {
+    //@extend .clearfix;
+    background-color: $color-teal;
+    color: #fff;
+    position: relative;
+    h1 {
+      font-size: 0.8em;
+      padding: 1em 2em;
+    }
+    .subnav-button {
+      text-align: center;
+      text-decoration: none;
+      background-color: $subnav-background;
+      color: #777;
+      //font-size: 3em;
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 1px solid red;
+      height: 100%;
+      width: 3em;
+    }
+  }
+  .subnav-options {
+    font-size: 1.5em;
+    font-weight: 100;
+    padding: 1em 1em 1em 2.75em;
+    li:hover {
+      color: $color-teal;
+    }
+    .active:before {
+      @include leftArrow();
+    }
+  }
+}

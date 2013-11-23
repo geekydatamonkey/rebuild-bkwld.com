@@ -14,3 +14,20 @@
     left: 50%;
     margin-left: -1 * $tri-width / 2; // nudge back
 }
+
+@mixin leftArrow($arrow-size: 0.4em) {
+      //$arrow-size: .4em;
+      $arrow-padding: 1.5em;
+      $arrow-color: darken($color-teal, 30%);
+      font-size: $arrow-size;
+      display: inline-block;
+      content: '';
+      width: 1em;
+      height: 1em;
+      border-bottom: $arrow-color solid 1px;
+      border-right: $arrow-color solid 1px;
+      margin-left: -1em - $arrow-padding;
+      margin-right: $arrow-padding;
+      margin-bottom: $arrow-size; // nudge up
+      @include rotate(-45deg);
+}

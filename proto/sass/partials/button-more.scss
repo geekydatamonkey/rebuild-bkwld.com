@@ -7,11 +7,14 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
+  //font-size: 0.95em;
   &:hover {
     color: #fff;
     background-color: $color-teal-dark;
   }
-  &:before {
-    @extend .fa.fa-angle-down;
+  .fa {
+    display: inline-block;
+    color: lighten($color-teal, 20%);
+    padding-right: 0.5em;
   }
 }
