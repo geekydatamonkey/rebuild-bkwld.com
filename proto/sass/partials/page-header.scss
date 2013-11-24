@@ -4,7 +4,7 @@
   font-family: $condensed-font-family;
   display: table;
   width: 100%;
-  padding: 0 0.5em 0 2.5em;
+  padding: 0 1em 0 2.5em;
   h1 {
     display: table-cell;
     vertical-align: middle;
@@ -12,6 +12,7 @@
     font-size: 2.75em;
     line-height: 1;
     margin: 0;
+    letter-spacing: -1px;
     //border: 1px solid yellow;
     a {
       color: #fff;

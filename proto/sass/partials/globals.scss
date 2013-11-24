@@ -18,6 +18,7 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   color: $color-black;
+  background-color: $color-gray-lighter;
 }
 
 a {
@@ -35,4 +36,10 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
+}
+section h1 {
+  font-weight: 300;
+}
+.section-heading {
+  font-size: 1.5em;
 }

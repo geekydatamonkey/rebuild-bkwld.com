@@ -11,11 +11,13 @@
 // Helpers
 @import "compass/css3";
 @import "vendor/font-awesome/font-awesome";
+@import "susy";
 
 // Globals
 @import "partials/variables";
 @import "partials/mixins";
 @import "partials/globals";
+
 
 // Modules
 @import "partials/main-nav";
@@ -31,7 +33,10 @@
 @import "partials/button";
 @import "partials/carousel";
 @import "partials/list-card";
+@import "partials/page-section";
 
 // Pages
+@import "partials/layout";
 @import "partials/modules";
+@import "partials/home-page";
 

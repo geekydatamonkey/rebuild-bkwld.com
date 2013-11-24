@@ -666,15 +666,16 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 /* line 199, ../sass/partials/html5bp.scss */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .page-section:before,
+.clearfix:after,
+.page-section:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */ }
 
 /* line 204, ../sass/partials/html5bp.scss */
-.clearfix:after {
+.clearfix:after, .page-section:after {
   clear: both; }
 
 /*
@@ -682,7 +683,7 @@ textarea {
  * Include this rule to trigger hasLayout and contain floats.
  */
 /* line 213, ../sass/partials/html5bp.scss */
-.clearfix {
+.clearfix, .page-section {
   *zoom: 1; }
 
 /* ==========================================================================
@@ -2519,24 +2520,33 @@ body {
   font-family: "proxima-nova", "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #444444; }
+  color: #444444;
+  background-color: #eeeeee; }
 
-/* line 23, ../sass/partials/globals.scss */
+/* line 24, ../sass/partials/globals.scss */
 a {
   color: #0099cc; }
-  /* line 25, ../sass/partials/globals.scss */
+  /* line 26, ../sass/partials/globals.scss */
   a:hover {
     color: deepskyblue; }
-  /* line 28, ../sass/partials/globals.scss */
+  /* line 29, ../sass/partials/globals.scss */
   a:visited {
     color: #77c4bc; }
-  /* line 31, ../sass/partials/globals.scss */
+  /* line 32, ../sass/partials/globals.scss */
   a:visited:hover {
     color: #53b5aa; }
 
-/* line 36, ../sass/partials/globals.scss */
+/* line 37, ../sass/partials/globals.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400; }
+
+/* line 40, ../sass/partials/globals.scss */
+section h1 {
+  font-weight: 300; }
+
+/* line 43, ../sass/partials/globals.scss */
+.section-heading {
+  font-size: 1.5em; }
 
 /* line 1, ../sass/partials/main-nav.scss */
 .main-nav {
@@ -2590,7 +2600,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "proxima-nova-extra-condensed", "Open Sans Condensed", "proxima-nova", "Open Sans", sans-serif;
   display: table;
   width: 100%;
-  padding: 0 0.5em 0 2.5em; }
+  padding: 0 1em 0 2.5em; }
   /* line 8, ../sass/partials/page-header.scss */
   .page-header h1 {
     display: table-cell;
@@ -2598,12 +2608,13 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-size: 2.75em;
     line-height: 1;
-    margin: 0; }
-    /* line 16, ../sass/partials/page-header.scss */
+    margin: 0;
+    letter-spacing: -1px; }
+    /* line 17, ../sass/partials/page-header.scss */
     .page-header h1 a {
       color: #fff;
       text-decoration: none; }
-  /* line 21, ../sass/partials/page-header.scss */
+  /* line 22, ../sass/partials/page-header.scss */
   .page-header .main-nav {
     display: table-cell;
     vertical-align: middle;
@@ -2644,10 +2655,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 1, ../sass/partials/card.scss */
 .card {
-  width: 33%;
   padding: 1.5em 0;
   border: 1px solid #ccc; }
-  /* line 4, ../sass/partials/card.scss */
+  /* line 3, ../sass/partials/card.scss */
   .card img {
     border-radius: 50%;
     padding: 1.5em;
@@ -2962,7 +2972,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 1, ../sass/partials/carousel.scss */
 .carousel {
   min-height: 5em;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 200;
   background-color: #eeeeee;
   padding: 1em 2em;
@@ -3043,12 +3053,14 @@ h1, h2, h3, h4, h5, h6 {
   /* line 55, ../sass/partials/carousel.scss */
   .button-spoked-wrap .button-spoked {
     font-family: "proxima-nova", "Open Sans", sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: normal;
     color: #fff; }
     /* line 60, ../sass/partials/carousel.scss */
     .button-spoked-wrap .button-spoked span {
-      font-size: 0.7em; }
+      display: inline-block;
+      font-size: 0.75em;
+      margin-top: 0.6em; }
 
 /* line 1, ../sass/partials/list-card.scss */
 .list-card {
@@ -3118,8 +3130,13 @@ h1, h2, h3, h4, h5, h6 {
     .list-card li:before, .list-card li:after {
       top: 0.4em; }
 
+/* line 1, ../sass/partials/page-section.scss */
+.page-section {
+  padding: 1em 2em;
+  border: 1px solid red; }
+
 /* line 1, ../sass/partials/modules.scss */
-body {
+body.modules-page {
   padding: 2em; }
 
 /* line 5, ../sass/partials/modules.scss */
@@ -3134,8 +3151,21 @@ body {
     padding: 0.25em 0;
     text-transform: uppercase;
     background-color: #ffff99; }
-    /* line 16, ../sass/partials/modules.scss */
+    /* line 15, ../sass/partials/modules.scss */
     .module > h1 code {
       color: #999;
       font-size: 1rem;
       text-transform: none; }
+
+/* line 2, ../sass/partials/home-page.scss */
+.home-page .video-hero {
+  background: url("http://bkwld.com/video/features/main.jpg");
+  height: 20em; }
+/* line 7, ../sass/partials/home-page.scss */
+.home-page .page-section.cols-3 .card {
+  width: 32%;
+  float: left;
+  margin-right: 2%; }
+/* line 12, ../sass/partials/home-page.scss */
+.home-page .page-section.cols-3 .card:nth-of-type(3n) {
+  margin-right: 0; }

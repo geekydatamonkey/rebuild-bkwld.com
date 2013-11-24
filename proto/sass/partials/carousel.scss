@@ -1,6 +1,6 @@
 .carousel {
   min-height: 5em;
-  font-size: 2em;
+  font-size: 2.5em;
   font-weight: 200;
   background-color: $color-gray-lighter;
   padding: 1em 2em;
@@ -54,11 +54,13 @@
 
   .button-spoked {
     font-family: $base-font-family;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: normal;
     color: #fff;
     span {
-      font-size: 0.7em;
+      display: inline-block;
+      font-size: 0.75em;
+      margin-top: 0.6em;
     }
   }
 }
