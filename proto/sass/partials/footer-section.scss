@@ -1,11 +1,15 @@
 .footer-section {
   padding: 1em;
+  background-color: #fff;
+  .footer-section-body {
+    margin: 2em 1em;
+  }
   p {
     color: #999;
     line-height: 1.8;
     font-size: 0.9em;
     letter-spacing: 1px;
-    padding: 1em;
+    margin: 0;
   }
   h1 {
     font-size: 1.5em;
@@ -25,6 +29,12 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1/0.9 * 1em;
+    line-height: 1;
+    background: url('http://bkwld.com/img/global/dashed-s73a75ecb90.png') bottom;
+    height: 1em;
+    &:hover {
+      background-position: top;
+    }
     a {
       color: $color-gray-darker;
       text-decoration: none;
@@ -41,27 +51,30 @@
         background: #fff;
       }
     }
-    a:before,
-    a:after {
-      content: '';
-      display: block;
-      z-index: -10;
-      width: 40%;
-      position: absolute;
-      top: .33em;
-      height: 0.75em;
-      //border: 1px solid green;
-      background: repeating-linear-gradient($color-gray-light, $color-gray-light 1px, white 1px, white 4px);
-    }
-    a:before {
-      left: 0;
-    }
-    a:after {
-      right: 0;
-    }
-    a:hover:after,
-    a:hover:before {
-      background: repeating-linear-gradient($color-teal, $color-teal 1px, white 1px, white 4px);
-    }
+    /**
+    * Failed Attempt at using gradients for striped 
+    **/
+    // a:before,
+    // a:after {
+    //   content: '';
+    //   display: block;
+    //   z-index: -10;
+    //   width: 40%;
+    //   position: absolute;
+    //   top: .33em;
+    //   height: 0.75em;
+    //   //border: 1px solid green;
+    //   background: repeating-linear-gradient($color-gray-light, $color-gray-light 1px, white 1px, white 4px);
+    // }
+    // a:before {
+    //   left: 0;
+    // }
+    // a:after {
+    //   right: 0;
+    // }
+    // a:hover:after,
+    // a:hover:before {
+    //   background: repeating-linear-gradient($color-teal, $color-teal 1px, white 1px, white 4px);
+    // }
   }
 }

@@ -1,5 +1,5 @@
 .news-card {
-  padding: 1em;
+  padding: 2em 0.5em;
   img {
     max-width: 90%;
     border-radius: 0;
@@ -9,12 +9,13 @@
   .card-nameplate {
     padding-left: 2em;
     h1 { 
-      font-size: 0.75em;
+      font-size: 1em;
+      line-height: 1.2;
     }
     // Plus sign
     h1:before,
     h1:after {
-      width: 1em;
+      width: 0.9em;
     }
   }
 }

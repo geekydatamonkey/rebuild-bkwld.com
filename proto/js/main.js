@@ -25,7 +25,22 @@
     }
   };
 
-  var bkwldSite = {
+  var bkwldPage = {
+    settings: {
+      pageSection: '.page-section',
+      card: '.card'
+    },
+
+    init: function() {
+      this.equalizeHeights();
+    },
+
+    equalizeHeights: function() {
+      $('.page-section').equalizer({
+        columns: 'article',
+        useHeight: 'outer',
+      });
+    }
   };
 
   $(document).ready(function() {
@@ -33,8 +48,7 @@
     if ($('body.modules-page').length ) {
       modulesPage.init();
     }
-
-
+    //bkwldPage.init();
   });
 
 })(jQuery, window, document);
